@@ -1,0 +1,8 @@
+git diff index.html
+git add . or
+git add index.html
+git commit --amend
+git push -f origin master
+
+git tag v2.0
+git push --tags

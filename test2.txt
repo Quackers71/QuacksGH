@@ -1,6 +1,0 @@
-total 13
-drwxr-xr-x 1 fcukq 197609   0 Jun 24 10:52 ../
--rw-r--r-- 1 fcukq 197609 354 Jun 24 15:05 test.txt
-drwxr-xr-x 1 fcukq 197609   0 Jun 24 15:06 .git/
--rw-r--r-- 1 fcukq 197609   0 Jun 24 15:06 test2.txt
-drwxr-xr-x 1 fcukq 197609   0 Jun 24 15:06 ./
