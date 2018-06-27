@@ -1,2 +1,11 @@
-document.write("This is External JS");
-alert("This Alert is from External JS");
+
+//Declare, Assignment, Operator, Assign Value;
+
+//Variables
+
+
+const Name = "Quackers Jnr II";
+//Name = "Quacks Yo";
+
+console.log(Name);
+
