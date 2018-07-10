@@ -1,3 +1,5 @@
+
+//ammending a file(s) without creating a new commit *** be careful with -f ***
 git diff index.html
 git add . or
 git add index.html
@@ -7,5 +9,13 @@ git push -f origin master
 git tag v2.0
 git push --tags
 
+//changing gitbash from aws repo to github repo
+// ssh-keygen 1st then ssh-agent -s then ssh-add ~.ssh/id_rsa
 git remote set-url origin git@github.com:Quackers71/QuacksGH.git
 git push -u origin master
+
+//renaming a Branch locally then remote 
+git branch turnary
+git branch -m ternary
+git push origin -u ternary
+git push origin --delete turnary
