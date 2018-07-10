@@ -1,11 +1,10 @@
 
-//Declare, Assignment, Operator, Assign Value;
+//IF ELSE STATEMENTS
+// Conditional Statements in JS
+//COMPARISON OPERATORS
+//>,<,>=,==,===,!=,!==
 
-//Variables
 
 
-const Name = "Quackers Jnr II";
-//Name = "Quacks Yo";
 
-console.log(Name);
 
