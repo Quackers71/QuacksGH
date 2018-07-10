@@ -1,11 +1,7 @@
 
-//Declare, Assignment, Operator, Assign Value;
-
-//Variables
+//Logical Operators && and ||
 
 
-const Name = "Quackers Jnr II";
-//Name = "Quacks Yo";
 
-console.log(Name);
+
 
