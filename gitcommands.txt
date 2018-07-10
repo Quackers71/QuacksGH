@@ -6,3 +6,6 @@ git push -f origin master
 
 git tag v2.0
 git push --tags
+
+git remote set-url origin git@github.com:Quackers71/QuacksGH.git
+git push -u origin master
