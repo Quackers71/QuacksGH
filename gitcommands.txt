@@ -22,7 +22,7 @@ git push origin --delete turnary
 
 Host github.com
   User git
-  IdentityFile ~/.ssh/BBGH_id_rsa
+  IdentityFile ~/.ssh/id_rsa
   
 // to view the remote origin
 git remote -v
