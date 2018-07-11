@@ -19,3 +19,7 @@ git branch turnary
 git branch -m ternary
 git push origin -u ternary
 git push origin --delete turnary
+
+Host github.com
+  User git
+  IdentityFile ~/.ssh/BBGH_id_rsa
