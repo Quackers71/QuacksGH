@@ -1,5 +1,5 @@
 
-//ammending a file(s) without creating a new commit *** be careful with -f ***
+// ammending a file(s) without creating a new commit *** be careful with -f ***
 git diff index.html
 git add . or
 git add index.html
@@ -9,12 +9,12 @@ git push -f origin master
 git tag v2.0
 git push --tags
 
-//changing gitbash from aws repo to github repo
+// changing gitbash from aws repo to github repo
 // ssh-keygen 1st then ssh-agent -s then ssh-add ~.ssh/id_rsa
 git remote set-url origin git@github.com:Quackers71/QuacksGH.git
 git push -u origin master
 
-//renaming a Branch locally then remote 
+// renaming a Branch locally then remote 
 git branch turnary
 git branch -m ternary
 git push origin -u ternary
@@ -22,8 +22,21 @@ git push origin --delete turnary
 
 Host github.com
   User git
-  IdentityFile ~/.ssh/BBGH_id_rsa
+  IdentityFile ~/.ssh/id_rsa
   
 // to view the remote origin
 git remote -v
+
+git config --global user.email "24840026+Quackers71@users.noreply.github.com"
+
+
+// Issues or Fixes
+
+// Issue On a git push origin {new branch}
+ ! [remote rejected] arraysforloops -> arraysforloops (push declined due to email privacy restrictions)
+error: failed to push some refs to 'git@github.com:Quackers71/QuacksGH.git'
+
+// Fix in this thread
+https://github.community/t5/How-to-use-Git-and-GitHub/push-declined-due-to-email-privacy-restrictions/td-p/7660
+// *** forget the rebase commands ***
 
