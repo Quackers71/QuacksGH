@@ -5,19 +5,32 @@
 
 let toDoList = [];
 
-///*function addItem(arr, item) {
-//    arr.push(item);
-//}
-//
-//addItem(toDoList,"walk the dog");
-//addItem(toDoList,"make coffee");
-//
-//console.log(toDoList);*/
 
 function addItem(arr) {
     let answer = prompt("What would you like to do today? : ");
-    arr.push(answer);
+	let correct = answer.toLowerCase().trim();
+    
+	if (checkDuplicate(arr,correct)) {
+		arr.push(correct);
+	}
+	else {
+		alert('Item won\'t be added to list as it already exists, do not work so hard');
+	}
 }
+
+
+function checkDuplicate(arr,item) {
+	let exists = false;
+	let index = arr.indexOf(item); //-1
+	if (index != -1) {
+		exists = false;
+	}
+	else {
+		exists = true;
+	}
+	return exists;
+}
+
 
 addItem(toDoList);
 addItem(toDoList);
