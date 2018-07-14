@@ -32,7 +32,28 @@ function checkDuplicate(arr,item) {
 }
 
 
+function removeItem(list) {
+	if (list.length > 0){
+		
+	
+	console.log(`You deleted "${list[list.length-1]}" from the list`);
+	
+	list.pop();
+	}
+	else {
+		console.log(`The list does not have any more items to delete`);
+	}
+}
+
+
+
 addItem(toDoList);
 addItem(toDoList);
 addItem(toDoList);
+
+removeItem(toDoList);
+removeItem(toDoList);
+removeItem(toDoList);
+removeItem(toDoList);
+
 console.log(toDoList);
