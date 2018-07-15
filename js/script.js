@@ -12,6 +12,7 @@ function addItem(arr) {
     
 	if (checkDuplicate(arr,correct)) {
 		arr.push(correct);
+        showItems(arr);
 	}
 	else {
 		alert('Item won\'t be added to list as it already exists, do not work so hard');
@@ -34,7 +35,7 @@ function checkDuplicate(arr,item) {
 // remove item function
 
 function removeItem(list) {
-    let answer = prompt(`Which item would you like to delete from the list? : `);
+    let answer = prompt(`Which item would you like to DELETE from the list? : `);
     let correct = answer.trim().toLowerCase();
     
     let index = list.indexOf(correct);
@@ -50,6 +51,16 @@ function removeItem(list) {
     }
 }
 
+// function showItems
+
+function showItems(list) {
+    let listValues = "Your list items are : ";
+        
+    for (let i = 0; i < list.length; i++) {
+        listValues += `"List item number ${i+1} ${list[i]}"`;
+    }
+    alert(listValues);
+}
 
 
 addItem(toDoList);
@@ -57,5 +68,7 @@ addItem(toDoList);
 addItem(toDoList);
 
 removeItem(toDoList);
+
+showItems(toDoList);
 
 console.log(toDoList);
