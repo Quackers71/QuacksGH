@@ -29,6 +29,15 @@ git remote -v
 
 git config --global user.email "24840026+Quackers71@users.noreply.github.com"
 
+// Create Aliases for Commands - Lazy Shortcuts ;-)
+// *** creating this file is good practice so you are not messing around with System Files ***
+vim ~/custom_aliases // creates a file in ~/
+# Version Control
+alias gs ="git status"
+
+source ~/.custom_aliases  // executes the current context...
+
+
 
 // Issues or Fixes
 
