@@ -37,6 +37,11 @@ alias gs ="git status"
 
 source ~/.custom_aliases  // executes the current context...
 
+git log --graph
+git log --graph --decorate --all
+
+git reset --hard HEAD^ // basically means HEAD-1  --hard will then checkout to previous branch with HEAD-1
+
 
 
 // Issues or Fixes
