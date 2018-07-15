@@ -31,18 +31,23 @@ function checkDuplicate(arr,item) {
 	return exists;
 }
 
+// remove item function
 
 function removeItem(list) {
-	if (list.length > 0){
-		
-	
-	console.log(`You deleted "${list[list.length-1]}" from the list`);
-	
-	list.pop();
-	}
-	else {
-		console.log(`The list does not have any more items to delete`);
-	}
+    let answer = prompt(`Which item would you like to delete from the list? : `);
+    let correct = answer.trim().toLowerCase();
+    
+    let index = list.indexOf(correct);
+    
+    if (!checkDuplicate(list,correct)) {
+        let removeItem = list.splice(index,1);
+        
+        console.log(removeItem);
+        alert(`You removed "${removeItem} " from your list`);
+    }
+    else {
+        console.log("no such value exists");
+    }
 }
 
 
@@ -51,9 +56,6 @@ addItem(toDoList);
 addItem(toDoList);
 addItem(toDoList);
 
-removeItem(toDoList);
-removeItem(toDoList);
-removeItem(toDoList);
 removeItem(toDoList);
 
 console.log(toDoList);
